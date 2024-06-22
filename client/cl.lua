@@ -3,7 +3,7 @@ local clock
 local loaded = false
 
 function DrawTxt(text, x, y, r, g, b)
-	SetTextColour(r, g, b,255)
+	SetTextColour(r, g, b,200)
 	SetTextFont(4)
 	SetTextScale(0, 0.5)
 	SetTextWrap(0.0, 1.0)
