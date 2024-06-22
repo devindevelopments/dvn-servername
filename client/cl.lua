@@ -35,11 +35,11 @@ Citizen.CreateThread(function()
 	while true do
 		Wait(1)
 		if loaded then
-			DrawTxt(Config.Text1 .. " - ", 0.4, 0.96, Config.Color.r, Config.Color.g, Config.Color.b)
-			DrawTxt(Config.Text2, 0.4965, 0.96, Config.Color2.r, Config.Color2.g, Config.Color2.b)
-			DrawTxt(" - " .. tostring(players) .. "/" .. Config.PlayerCount, 0.551, 0.96, Config.Color.r, Config.Color.g, Config.Color.b)
+			DrawTxt(Config.Text1 .. " - ", Config.Offset.x, Config.Offset.y, Config.Color.r, Config.Color.g, Config.Color.b)
+			DrawTxt(Config.Text2, Config.Offset2.x, Config.Offset2.y, Config.Color2.r, Config.Color2.g, Config.Color2.b)
+			DrawTxt(" - " .. tostring(players) .. "/" .. Config.PlayerCount, Config.Offset3.x, Config.Offset3.y, Config.Color.r, Config.Color.g, Config.Color.b)
 			if Config.Time then
-				DrawTxt(" - " .. tostring(clock), 0.577, 0.96, Config.Color.r, Config.Color.g, Config.Color.b)
+				DrawTxt(" - " .. tostring(clock), Config.Offset4.x, Config.Offset4.y, Config.Color.r, Config.Color.g, Config.Color.b)
 			end
 		end
 	end
