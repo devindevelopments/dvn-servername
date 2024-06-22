@@ -1,2 +1,2 @@
 # dvn-servername
-Server name display based on GTA:W
+Server name display based on **GTA:W**
