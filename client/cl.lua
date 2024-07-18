@@ -19,11 +19,11 @@ RegisterNetEvent('dvn-servername:cl:getPlayerCount', function(count, time)
 end)
 
 -- Check Framework
-if Config.Framework == 'QBCore' or framework == 'QBCore' then
+if Config.Framework == 'QBCore' then
 	RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
 		loaded = true
 	end)
-elseif Config.Framework == 'ESX' or framework == 'ESX' then
+elseif Config.Framework == 'ESX' then
 	RegisterNetEvent('esx:playerLoaded', function()
 		loaded = true
 	end)
